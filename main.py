@@ -30,5 +30,5 @@ def calculate(moon_matrix: List[List]) -> int:
     return krater_count
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     pass
