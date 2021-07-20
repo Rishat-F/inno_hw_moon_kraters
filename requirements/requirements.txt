@@ -1,4 +1,4 @@
 # здесь будут Ваши requirements
 
 scipy==1.7.0
-numpy==1.21.1
+tox==3.24.0
