@@ -1,9 +1,7 @@
 import json
 from typing import List
 
-import numpy as np
-
-from skimage.measure import label
+from scipy.ndimage.measurements import label
 
 
 def calculate(moon_matrix: List[List]) -> int:
@@ -17,8 +15,7 @@ def calculate(moon_matrix: List[List]) -> int:
     Returns:
         The quantity of kraters.
     """
-    tagged_moon_matrix = label(np.array(moon_matrix), return_num=True, connectivity=1)
-    return tagged_moon_matrix[1]
+    return label(moon_matrix)[1]
 
 
 if __name__ == "__main__":
