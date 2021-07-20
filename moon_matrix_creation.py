@@ -22,5 +22,5 @@ def create_moon_matrix() -> List[List]:
 
 if __name__ == "__main__":
     moon_matrix = create_moon_matrix()
-    with open('moon_matrix_snapshot.json', 'w', encoding='utf-8') as f:
+    with open("moon_matrix_snapshot.json", "w", encoding="utf-8") as f:
         json.dump(moon_matrix, f, ensure_ascii=False, indent=4)

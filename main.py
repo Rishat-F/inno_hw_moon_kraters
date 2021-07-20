@@ -22,6 +22,6 @@ def calculate(moon_matrix: List[List]) -> int:
 
 
 if __name__ == "__main__":
-    with open('moon_matrix_snapshot.json', 'r', encoding='utf-8') as f:
+    with open("moon_matrix_snapshot.json", "r", encoding="utf-8") as f:
         moon_matrix = json.load(f)
     print(calculate(moon_matrix))
