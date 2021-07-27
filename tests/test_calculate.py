@@ -2,7 +2,6 @@ import sys
 import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-sys.path.append(r"C:\Users\Rishat\PycharmProjects\inno_hw_moon_kraters\venv\Lib\site-packages")
 
 from main import calculate  # Импорт функции calculate из домашнего задания
 from tests.constant_test_cases import PUBLIC_TEST_CASES, SECRET_TEST_CASES
